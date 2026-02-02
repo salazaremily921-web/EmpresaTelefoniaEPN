@@ -2,15 +2,48 @@
 #define SERVICIOS_H
 
 #include <string>
+using namespace std;
+
 const int MAX_SERVICIOS = 100;
-extern std::string servicios[MAX_SERVICIOS][10];
+const int CAMPOS_SERVICIO = 6;
+
+extern string servicios[MAX_SERVICIOS][CAMPOS_SERVICIO];
 extern int totalServicios;
 
-void menuServicios();
-void leerServicios();
-void guardarServicios();
+// ================= CRUD =================
+string generarIDServicio();
 void agregarServicio();
 void mostrarServicios();
+void actualizarServicio();
+void eliminarServicio();
+
+// ================= BUSQUEDAS =================
+void buscarServicio();
+void buscarServicioPorID();
+void buscarServicioPorNombre();
+void buscarServicioPorCosto();
+void buscarServicioPorPlan();
+void buscarServicioPorEstado();
+void buscarServicioPorObservaciones();
+void buscarServicioPorCualquierCampo();
+void buscarServicioPorRangoCosto();
+void buscarServicioPorLetraInicial();
+void buscarServicioPorTexto();
+
+
+void intercambiarServicios(int a,int b);
+void ordenarServiciosPorID();
+void ordenarServiciosPorNombre();
+void ordenarServiciosPorCosto();
+void ordenarServiciosPorPlan();
+void ordenarServiciosPorEstado();
+
+
+void leerServicios();
+void guardarServicios();
+
+
+void menuServicios();
 
 #endif
 

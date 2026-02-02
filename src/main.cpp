@@ -1,4 +1,7 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
+
 #include "clientes.h"
 #include "lineas.h"
 #include "servicios.h"
@@ -8,12 +11,12 @@
 using namespace std;
 
 int main() {
+    srand(time(0)); // Para IDs aleatorios
     int opcion;
-
     do {
-        cout << "\n=== Empresa de Telefonia ===\n";
+        cout << "\n Sistema Empresa Telefonia \n";
         cout << "1. Clientes\n";
-        cout << "2. Lineas Celular\n";
+        cout << "2. Lineas\n";
         cout << "3. Servicios\n";
         cout << "4. Facturas\n";
         cout << "5. Promociones\n";
@@ -27,8 +30,8 @@ int main() {
             case 3: menuServicios(); break;
             case 4: menuFacturas(); break;
             case 5: menuPromociones(); break;
-            case 0: cout << "Saliendo del programa...\n"; break;
-            default: cout << "Opcion invalida. Intenta de nuevo.\n";
+            case 0: cout << "Saliendo del sistema...\n"; break;
+            default: cout << "Opcion invalida\n";
         }
     } while(opcion != 0);
 
