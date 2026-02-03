@@ -10,14 +10,13 @@ const int CAMPOS_SERVICIO = 6;
 extern string servicios[MAX_SERVICIOS][CAMPOS_SERVICIO];
 extern int totalServicios;
 
-// ================= CRUD =================
+
 string generarIDServicio();
 void agregarServicio();
 void mostrarServicios();
 void actualizarServicio();
 void eliminarServicio();
 
-// ================= BUSQUEDAS =================
 void buscarServicio();
 void buscarServicioPorID();
 void buscarServicioPorNombre();

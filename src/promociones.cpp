@@ -1,12 +1,12 @@
 #include "promociones.h"
 #include <iostream>
 #include <fstream>
+#include <string>      
 #include <iomanip>
-#include <cstdlib>
-#include <ctime>
 
 using namespace std;
 
+// Definición de variables globales
 string promociones[MAX_PROMOCIONES][CAMPOS_PROMOCION];
 int totalPromociones = 0;
 

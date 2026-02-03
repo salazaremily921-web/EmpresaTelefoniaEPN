@@ -11,7 +11,7 @@ const int CAMPOS = 9;
 extern string lineas[MAX_LINEAS][CAMPOS];
 extern int totalLineas;
 
-// Funciones principales
+
 string generarIDLinea();
 void leerLineas();
 void guardarLineas();
@@ -21,10 +21,10 @@ void actualizarLinea();
 void eliminarLinea();
 void menuLineas();
 
-// Validaciones
+
 bool validarNumeroLinea(const string& num);
 
-// Funciones de búsqueda
+
 void buscarLineaPorID();
 void buscarLineaPorCliente();
 void buscarLineaPorNumero();
@@ -33,7 +33,7 @@ void buscarLineaPorEstado();
 void buscarLineaPorTipo();
 void buscarLineaPorFecha();
 
-// Funciones de ordenamiento
+
 void intercambiarFilasLinea(int a, int b);
 void ordenarLineasPorID();
 void ordenarLineasPorNumero();
